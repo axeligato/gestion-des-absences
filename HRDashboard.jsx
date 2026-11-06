@@ -9,10 +9,9 @@ export default function HRDashboard({items,documents,activity,people,onNavigate,
  return <section className="hr-dashboard" aria-label="Tableau de bord RH">
  <div className="hr-dashboard-intro"><div><p className="eyebrow">VUE D'ENSEMBLE</p><h2>Tableau de bord RH</h2><p>Retrouvez les actions prioritaires et les activités de votre espace RH.</p></div></div>
  <div className="hr-kpis">
- <button onClick={()=>onNavigate("people")}><span>Collaborateurs</span><strong>{people.length}</strong><small>Consulter l'annuaire <ArrowRight size={14}/></small></button>
  <button onClick={()=>onNavigate("requests")}><span>Demandes à traiter</span><strong>{pending.length}</strong><small>Consulter les demandes <ArrowRight size={14}/></small></button>
  <button onClick={()=>onNavigate("documents")}><span>Documents à vérifier</span><strong>{toReview.length}</strong><small>Vérifier les pièces <ArrowRight size={14}/></small></button>
- <button onClick={()=>onNavigate("recruitment")}><span>Recrutement</span><strong><BriefcaseBusiness size={25}/></strong><small>Consulter le suivi <ArrowRight size={14}/></small></button>
+ <button onClick={()=>onNavigate("hrcases")}><span>Dossiers RH</span><strong><FolderOpen size={25}/></strong><small>Voir les actions à suivre <ArrowRight size={14}/></small></button>
  </div>
  <div className="hr-dashboard-columns">
  <section className="panel hr-dashboard-block"><div className="hr-block-title"><h3>À traiter</h3><span className="badge pending">{pending.length+toReview.length+corrections.length}</span></div>
