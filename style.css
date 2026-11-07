@@ -96,7 +96,7 @@ nav>div>button{display:inline-flex;align-items:center;justify-content:center;gap
 .theme-toggle{width:38px;height:38px;min-width:38px;padding:0;border:1px solid #d7d7d7;border-radius:50%;color:#333;background:transparent}
 .theme-toggle:hover{background:#f4f4f4}
 .brand .free-logo{border-radius:3px;box-sizing:content-box;padding:4px}
-[data-theme="dark"]{color-scheme:dark;--dark-bg:#111317;--dark-surface:#1c1f25;--dark-elevated:#252a32;--dark-border:#3b414b;--dark-text:#f0f1f3;--dark-muted:#b3bbc6}
+[data-theme="dark"]{color-scheme:dark;--dark-bg:#090909;--dark-surface:#161616;--dark-elevated:#242424;--dark-border:#393939;--dark-text:#f2f2f2;--dark-muted:#b8b8b8}
 [data-theme="dark"] body{background:var(--dark-bg);color:var(--dark-text)}
 [data-theme="dark"] header,[data-theme="dark"] .panel,[data-theme="dark"] .drawer,[data-theme="dark"] .notification-modal,[data-theme="dark"] .help-dialog,[data-theme="dark"] .role,[data-theme="dark"] .login-card,[data-theme="dark"] .hr-resource,[data-theme="dark"] .hr-kpis>button,[data-theme="dark"] .personal-service-grid button,[data-theme="dark"] .personal-service-row,[data-theme="dark"] .hr-action-row,[data-theme="dark"] .hr-work-item,[data-theme="dark"] .hr-shortcuts button,[data-theme="dark"] .document-row,[data-theme="dark"] .notification-entry,[data-theme="dark"] .member-card,[data-theme="dark"] .request,[data-theme="dark"] .mini,[data-theme="dark"] .comment-editor{background:var(--dark-surface);color:var(--dark-text);border-color:var(--dark-border)}
 [data-theme="dark"] .brand .free-logo{background:#000}
@@ -106,10 +106,10 @@ nav>div>button{display:inline-flex;align-items:center;justify-content:center;gap
 [data-theme="dark"] button:not(.primary):not(.support-mail-cta):hover{background:var(--dark-elevated)}
 [data-theme="dark"] nav button.active,[data-theme="dark"] .back-link,[data-theme="dark"] .comment-edit,[data-theme="dark"] .hr-text-action,[data-theme="dark"] .hr-work-item-action{color:#ff6666!important}
 [data-theme="dark"] .drawer-header,[data-theme="dark"] .weekday,[data-theme="dark"] .calendar-filters,[data-theme="dark"] .document-summary,[data-theme="dark"] .document-steps,[data-theme="dark"] .document-history,[data-theme="dark"] .facts,[data-theme="dark"] .comment,[data-theme="dark"] .personal-service-form,[data-theme="dark"] .personal-empty,[data-theme="dark"] .support-section,[data-theme="dark"] .telework-summary,[data-theme="dark"] .hr-work-summary,[data-theme="dark"] .member-summary,[data-theme="dark"] .notification-heading{background:var(--dark-elevated);color:var(--dark-text);border-color:var(--dark-border)}
-[data-theme="dark"] .day.outside{background:#171a20;color:#858d9a}
-[data-theme="dark"] .event{color:var(--dark-text)!important;background:#30333e!important}
-[data-theme="dark"] input,[data-theme="dark"] select,[data-theme="dark"] textarea{background:#2a2e36;color:var(--dark-text);border-color:#69717e}
-[data-theme="dark"] input::placeholder,[data-theme="dark"] textarea::placeholder{color:#b0b6c0}
+[data-theme="dark"] .day.outside{background:#111111;color:#888888}
+[data-theme="dark"] .event{color:var(--dark-text)!important;background:#303030!important}
+[data-theme="dark"] input,[data-theme="dark"] select,[data-theme="dark"] textarea{background:#292929;color:var(--dark-text);border-color:#737373}
+[data-theme="dark"] input::placeholder,[data-theme="dark"] textarea::placeholder{color:#b6b6b6}
 [data-theme="dark"] .telework-switch button.selected,[data-theme="dark"] .document-reasons button.selected{background:#4b252a;color:#fff;border-color:#ff6565}
 [data-theme="dark"] .telework-weekdays label{border-color:var(--dark-border)}
 [data-theme="dark"] .badge.pending{background:#59431e;color:#ffe4a3}
