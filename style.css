@@ -133,3 +133,6 @@ nav>div>button{display:inline-flex;align-items:center;justify-content:center;gap
 [data-theme="dark"] .action-feedback-copy p{color:#b5d9c0}
 [data-theme="dark"] .action-feedback-close:hover{background:#294b35!important}
 @media(max-width:650px){.action-feedback{bottom:12px;right:12px;width:calc(100vw - 24px);padding:14px 12px}}
+
+/* Single demo identity in employee space */
+.employee-identity{display:flex;flex-direction:column;gap:5px;align-items:flex-end;text-align:right;min-width:0}.employee-identity small{font-size:10px;letter-spacing:.08em;color:#777;font-weight:700}.employee-identity strong{font-size:14px;overflow-wrap:anywhere}[data-theme="dark"] .employee-identity small{color:#b8b8b8}@media(max-width:650px){.employee-identity{align-items:flex-start;text-align:left;margin-top:12px}}
