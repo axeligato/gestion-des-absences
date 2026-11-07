@@ -91,3 +91,31 @@ nav>div>button{display:inline-flex;align-items:center;justify-content:center;gap
 .telework-summary small{font-size:12px;line-height:1.5;color:#555}
 .telework-summary .error{color:#b00020}
 @media(max-width:420px){.telework-weekdays{gap:3px}.telework-weekdays label{flex-direction:column;padding:8px 2px}.telework-form .two{grid-template-columns:1fr}}
+
+/* Accessible theme switch; Free logo sits on a black plate in dark mode. */
+.theme-toggle{width:38px;height:38px;min-width:38px;padding:0;border:1px solid #d7d7d7;border-radius:50%;color:#333;background:transparent}
+.theme-toggle:hover{background:#f4f4f4}
+.brand .free-logo{border-radius:3px;box-sizing:content-box;padding:4px}
+[data-theme="dark"]{color-scheme:dark;--dark-bg:#111317;--dark-surface:#1c1f25;--dark-elevated:#252a32;--dark-border:#3b414b;--dark-text:#f0f1f3;--dark-muted:#b3bbc6}
+[data-theme="dark"] body{background:var(--dark-bg);color:var(--dark-text)}
+[data-theme="dark"] header,[data-theme="dark"] .panel,[data-theme="dark"] .drawer,[data-theme="dark"] .notification-modal,[data-theme="dark"] .help-dialog,[data-theme="dark"] .role,[data-theme="dark"] .login-card,[data-theme="dark"] .hr-resource,[data-theme="dark"] .hr-kpis>button,[data-theme="dark"] .personal-service-grid button,[data-theme="dark"] .personal-service-row,[data-theme="dark"] .hr-action-row,[data-theme="dark"] .hr-work-item,[data-theme="dark"] .hr-shortcuts button,[data-theme="dark"] .document-row,[data-theme="dark"] .notification-entry,[data-theme="dark"] .member-card,[data-theme="dark"] .request,[data-theme="dark"] .mini,[data-theme="dark"] .comment-editor{background:var(--dark-surface);color:var(--dark-text);border-color:var(--dark-border)}
+[data-theme="dark"] .brand .free-logo{background:#000}
+[data-theme="dark"] .brand small,[data-theme="dark"] .intro p:last-child,[data-theme="dark"] .welcome>p,[data-theme="dark"] .muted,[data-theme="dark"] .hint,[data-theme="dark"] .stats span,[data-theme="dark"] .request small,[data-theme="dark"] .mini small,[data-theme="dark"] .member-card small,[data-theme="dark"] .personal-service-grid button small,[data-theme="dark"] .personal-service-row small,[data-theme="dark"] .hr-kpis span,[data-theme="dark"] .hr-kpis strong,[data-theme="dark"] .hr-action-row strong,[data-theme="dark"] .hr-activity-row small,[data-theme="dark"] .document-row small,[data-theme="dark"] .activity-entry small,[data-theme="dark"] .faq-heading p,[data-theme="dark"] .faq-item p,[data-theme="dark"] .support-section p,[data-theme="dark"] .telework-summary small,[data-theme="dark"] .telework-form>.muted{color:var(--dark-muted)}
+[data-theme="dark"] .stats>div,[data-theme="dark"] nav,[data-theme="dark"] .calendar-grid .day,[data-theme="dark"] .faq-item,[data-theme="dark"] .activity-entry,[data-theme="dark"] .hr-action-row,[data-theme="dark"] .personal-service-row,[data-theme="dark"] .document-row{border-color:var(--dark-border)}
+[data-theme="dark"] button:not(.primary):not(.support-mail-cta):not(.badge):not(.selected),[data-theme="dark"] .theme-toggle{background:var(--dark-surface);color:var(--dark-text);border-color:var(--dark-border)}
+[data-theme="dark"] button:not(.primary):not(.support-mail-cta):hover{background:var(--dark-elevated)}
+[data-theme="dark"] nav button.active,[data-theme="dark"] .back-link,[data-theme="dark"] .comment-edit,[data-theme="dark"] .hr-text-action,[data-theme="dark"] .hr-work-item-action{color:#ff6666!important}
+[data-theme="dark"] .drawer-header,[data-theme="dark"] .weekday,[data-theme="dark"] .calendar-filters,[data-theme="dark"] .document-summary,[data-theme="dark"] .document-steps,[data-theme="dark"] .document-history,[data-theme="dark"] .facts,[data-theme="dark"] .comment,[data-theme="dark"] .personal-service-form,[data-theme="dark"] .personal-empty,[data-theme="dark"] .support-section,[data-theme="dark"] .telework-summary,[data-theme="dark"] .hr-work-summary,[data-theme="dark"] .member-summary,[data-theme="dark"] .notification-heading{background:var(--dark-elevated);color:var(--dark-text);border-color:var(--dark-border)}
+[data-theme="dark"] .day.outside{background:#171a20;color:#858d9a}
+[data-theme="dark"] .event{color:var(--dark-text)!important;background:#30333e!important}
+[data-theme="dark"] input,[data-theme="dark"] select,[data-theme="dark"] textarea{background:#2a2e36;color:var(--dark-text);border-color:#69717e}
+[data-theme="dark"] input::placeholder,[data-theme="dark"] textarea::placeholder{color:#b0b6c0}
+[data-theme="dark"] .telework-switch button.selected,[data-theme="dark"] .document-reasons button.selected{background:#4b252a;color:#fff;border-color:#ff6565}
+[data-theme="dark"] .telework-weekdays label{border-color:var(--dark-border)}
+[data-theme="dark"] .badge.pending{background:#59431e;color:#ffe4a3}
+[data-theme="dark"] .badge.good{background:#194c35;color:#b4f2c9}
+[data-theme="dark"] .badge.bad{background:#55262d;color:#ffb9bd}
+[data-theme="dark"] .toast{background:#183e2c;color:#d4fce2;border-color:#47896b}
+[data-theme="dark"] .telework-summary .error,[data-theme="dark"] .error{color:#ff9ca5}
+[data-theme="dark"] .theme-toggle{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
+@media(max-width:650px){.theme-toggle{width:34px;height:34px;min-width:34px}.brand .free-logo{padding:3px}}
