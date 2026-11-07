@@ -119,3 +119,17 @@ nav>div>button{display:inline-flex;align-items:center;justify-content:center;gap
 [data-theme="dark"] .telework-summary .error,[data-theme="dark"] .error{color:#ff9ca5}
 [data-theme="dark"] .theme-toggle{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
 @media(max-width:650px){.theme-toggle{width:34px;height:34px;min-width:34px}.brand .free-logo{padding:3px}}
+
+/* Unified action confirmation for requests, documents and approvals */
+.action-feedback{position:fixed;bottom:24px;right:24px;z-index:2500;display:flex;align-items:flex-start;gap:12px;width:min(440px,calc(100vw - 32px));padding:17px 15px;border:1px solid #a5d7b4;border-left:4px solid #22834c;border-radius:8px;background:#f1fbf4;color:#143e26;box-shadow:0 10px 32px #0002}
+.action-feedback-icon{display:grid;place-items:center;flex:none;width:28px;height:28px;border-radius:50%;background:#d1f0dc;color:#18743d}
+.action-feedback-copy{flex:1;min-width:0;line-height:1.45}
+.action-feedback-copy strong{display:block;font-size:14px}
+.action-feedback-copy p{font-size:12px;margin:5px 0 0;color:#2c5940;line-height:1.55}
+.action-feedback-close{flex:none;align-self:flex-start;border:0!important;background:transparent!important;color:inherit!important;padding:4px!important;border-radius:4px}
+.action-feedback-close:hover{background:#d1f0dc!important}
+[data-theme="dark"] .action-feedback{background:#18271e;color:#e1f8e8;border-color:#396b4b;border-left-color:#6ed29a}
+[data-theme="dark"] .action-feedback-icon{background:#294b35;color:#a5f0c2}
+[data-theme="dark"] .action-feedback-copy p{color:#b5d9c0}
+[data-theme="dark"] .action-feedback-close:hover{background:#294b35!important}
+@media(max-width:650px){.action-feedback{bottom:12px;right:12px;width:calc(100vw - 24px);padding:14px 12px}}
